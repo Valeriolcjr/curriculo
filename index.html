@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Valério Lima — Senior Backend Engineer especializado em Golang, Cloud-Native, DevSecOps e Cibersegurança."
+  >
+
+  <meta name="theme-color" content="#05070b">
+
+  <title>
+    Valério Lima | Backend, DevSecOps & Cibersegurança
+  </title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+
+      theme: {
+        extend: {
+          colors: {
+            darkBg: "#05070b",
+            cardBg: "#0f1420",
+            accentGreen: "#10b981",
+            accentBlue: "#3b82f6"
+          },
+
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+  class="bg-darkBg text-gray-100 antialiased selection:bg-emerald-500 selection:text-black overflow-x-hidden"
+>
+  <!-- Fundo animado -->
+  <canvas
+    id="bgCanvas"
+    class="fixed inset-0 pointer-events-none -z-10"
+    aria-hidden="true"
+  ></canvas>
+
+  <a href="#conteudo" class="skip-link">
+    Pular para o conteúdo
+  </a>
+
+  <!-- Navegação -->
+  <header
+    class="fixed inset-x-0 top-0 z-50 glass-nav border-b border-gray-800/80"
+  >
+    <div
+      class="max-w-7xl mx-auto px-5 sm:px-6 flex items-center justify-between"
+    >
+      <a
+        href="#inicio"
+        class="font-extrabold text-lg tracking-tight flex items-center gap-2"
+        aria-label="Valério Lima — início"
+      >
+        <span class="brand-mark">
+          <i class="fa-solid fa-code"></i>
+        </span>
+
+        <span
+          class="bg-gradient-to-r from-emerald-300 to-blue-400 bg-clip-text text-transparent"
+        >
+          Valério Lima
+        </span>
+      </a>
+
+      <nav
+        class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-400"
+        aria-label="Navegação principal"
+      >
+        <a href="#sobre" class="nav-link">
+          Sobre
+        </a>
+
+        <a href="#competencias" class="nav-link">
+          Competências
+        </a>
+
+        <a href="#experiencia" class="nav-link">
+          Experiência
+        </a>
+
+        <a href="#formacao" class="nav-link">
+          Formação
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button
+          type="button"
+          onclick="copiarEmail()"
+          class="btn-contact hidden sm:inline-flex"
+          aria-label="Copiar e-mail profissional"
+        >
+          <i class="fa-regular fa-copy"></i>
+          <span id="copyText">Contato</span>
+        </button>
+
+        <button
+          id="menuButton"
+          type="button"
+          class="menu-button lg:hidden"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Abrir menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav
+      id="mobileMenu"
+      class="mobile-menu hidden lg:hidden"
+      aria-label="Navegação móvel"
+    >
+      <a href="#sobre">Sobre</a>
+
+      <a href="#competencias">
+        Competências
+      </a>
+
+      <a href="#experiencia">
+        Experiência
+      </a>
+
+      <a href="#formacao">
+        Formação
+      </a>
+
+      <button
+        type="button"
+        onclick="copiarEmail()"
+      >
+        <i class="fa-regular fa-copy"></i>
+        Copiar e-mail
+      </button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- Hero -->
+    <section
+      id="inicio"
+      class="hero-section max-w-7xl mx-auto px-5 sm:px-6 grid lg:grid-cols-[1.15fr_.85fr] gap-14 items-center"
+    >
+      <div class="reveal">
+        <div class="status-pill">
+          <span></span>
+          Fortaleza · Disponível para remoto
+        </div>
+
+        <p class="eyebrow mt-7">
+          Senior Backend Engineer · Go · Cloud · Security
+        </p>
+
+        <h1 class="hero-title">
+          Sistemas de alta performance,
+          <span>seguros por arquitetura.</span>
+        </h1>
+
+        <p class="hero-copy">
+          Engenheiro de Software Sênior especializado em backend
+          com <strong>Golang</strong>, arquiteturas cloud-native,
+          automação DevOps e operações de segurança. Conecto
+          desenvolvimento, infraestrutura e cibersegurança para
+          entregar serviços resilientes, observáveis e preparados
+          para escala.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mt-8">
+          <a href="#experiencia" class="btn-primary">
+            Conhecer experiência
+
+            <i class="fa-solid fa-arrow-down text-xs"></i>
+          </a>
+
+          <button
+            type="button"
+            onclick="window.print()"
+            class="btn-secondary"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i>
+            Baixar currículo
+          </button>
+        </div>
+
+        <div class="contact-row">
+          <a href="mailto:valeriolima97@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+            valeriolima97@gmail.com
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/valerio-j%C3%BAnior-995364206/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+
+          <span class="text-gray-600">
+            <i class="fa-brands fa-github"></i>
+            GitHub em breve
+          </span>
+        </div>
+      </div>
+
+      <!-- Janela técnica -->
+      <div class="relative reveal delay-1">
+        <div
+          class="hero-orbit"
+          aria-hidden="true"
+        ></div>
+
+        <div class="code-window glass-card">
+          <div class="window-bar">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <small>profile.go</small>
+            <small>production</small>
+          </div>
+
+          <pre><code><span class="code-pink">type</span> <span class="code-yellow">Engineer</span> <span class="code-pink">struct</span> {
+  Role       <span class="code-blue">string</span>
+  Core       []<span class="code-blue">string</span>
+  Security   <span class="code-blue">string</span>
+}
+
+valerio := Engineer{
+  Role: <span class="code-green">"Senior Backend"</span>,
+  Core: []string{
+    <span class="code-green">"Go"</span>,
+    <span class="code-green">"Cloud-Native"</span>,
+    <span class="code-green">"DevSecOps"</span>,
+  },
+  Security: <span class="code-green">"Purple Team"</span>,
+}</code></pre>
+
+          <div class="terminal-line">
+            <span>$</span>
+            secure-by-design --ship
+            <span class="cursor"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Indicadores -->
+    <section
+      class="max-w-7xl mx-auto px-5 sm:px-6 pb-10 reveal"
+      aria-label="Indicadores profissionais"
+    >
+      <div class="metrics glass-card">
+        <div>
+          <strong>5+</strong>
+          <span>anos em tecnologia</span>
+        </div>
+
+        <div>
+          <strong>Go</strong>
+          <span>backend de alta performance</span>
+        </div>
+
+        <div>
+          <strong>Cloud</strong>
+          <span>infraestrutura como código</span>
+        </div>
+
+        <div>
+          <strong>Security</strong>
+          <span>defesa + ofensiva</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section
+      id="sobre"
+      class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
+    >
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow">
+            01 · Perfil
+          </p>
+
+          <h2 class="section-title">
+            Engenharia que conecta produto, operação e segurança.
+          </h2>
+        </div>
+
+        <div class="about-panel glass-card">
+          <p>
+            Atuo na construção e evolução de sistemas backend de
+            alta demanda, com foco em
+            <strong>
+              Golang, APIs, microsserviços e sistemas distribuídos
+            </strong>.
+            Minha experiência atravessa todo o ciclo de entrega:
+            arquitetura, desenvolvimento, containerização,
+            infraestrutura, CI/CD, observabilidade e proteção em
+            produção.
+          </p>
+
+          <p>
+            Na segurança, aplico práticas de
+            <strong>
+              Shift-Left Security, hardening, gestão de
+              vulnerabilidades, resposta a incidentes e Purple Team
+            </strong>.
+            Essa visão integrada permite reduzir riscos sem
+            comprometer velocidade, disponibilidade ou experiência
+            do produto.
+          </p>
+
+          <div class="principles">
+            <span>Performance mensurável</span>
+            <span>Automação sustentável</span>
+            <span>Segurança por padrão</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competências -->
+    <section
+      id="competencias"
+      class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
+    >
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">
+            02 · Domínio técnico
+          </p>
+
+          <h2 class="section-title">
+            Competências que operam em conjunto.
+          </h2>
+        </div>
+
+        <p>
+          Uma stack construída para desenvolver, entregar, observar
+          e proteger aplicações críticas.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <h3>Backend & Arquitetura</h3>
+
+          <p>
+            Serviços eficientes, concorrentes e preparados para
+            escala.
+          </p>
+
+          <div class="tag-list">
+            <span>Golang avançado</span>
+            <span>Python</span>
+            <span>PHP</span>
+            <span>REST</span>
+            <span>gRPC</span>
+            <span>Microsserviços</span>
+            <span>Sistemas distribuídos</span>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card">
+          <div class="skill-icon blue">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+
+          <h3>Cloud & DevOps</h3>
+
+          <p>
+            Infraestrutura reproduzível e entregas seguras e
+            automatizadas.
+          </p>
+
+          <div class="tag-list">
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Terraform</span>
+            <span>GitLab CI/CD</span>
+            <span>Linux</span>
+            <span>Shell Script</span>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <h3>DevSecOps & Cyber</h3>
+
+          <p>
+            Segurança integrada ao SDLC e às operações em produção.
+          </p>
+
+          <div class="tag-list">
+            <span>SAST/DAST</span>
+            <span>OWASP</span>
+            <span>Hardening</span>
+            <span>Pentest</span>
+            <span>Purple Team</span>
+            <span>DFIR</span>
+            <span>Threat Hunting</span>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card">
+          <div class="skill-icon blue">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <h3>Dados & Observabilidade</h3>
+
+          <p>
+            Persistência, cache, métricas e visibilidade operacional.
+          </p>
+
+          <div class="tag-list">
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>Redis</span>
+            <span>MongoDB</span>
+            <span>Prometheus</span>
+            <span>Grafana</span>
+            <span>Wazuh</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experiência -->
+    <section
+      id="experiencia"
+      class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
+    >
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">
+            03 · Trajetória
+          </p>
+
+          <h2 class="section-title">
+            Experiência profissional.
+          </h2>
+        </div>
+
+        <p>
+          Clique em uma experiência para consultar escopo,
+          responsabilidades e impacto técnico.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Unidental -->
+        <article class="experience-card glass-card open">
+          <button
+            class="experience-trigger"
+            type="button"
+            aria-expanded="true"
+          >
+            <span class="timeline-dot"></span>
+
+            <span class="experience-main">
+              <small>SET 2025 — PRESENTE</small>
+
+              <strong>
+                Especialista em Cibersegurança · Líder Purple Team
+              </strong>
+
+              <em>Unidental Ceará · Híbrido</em>
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="experience-content">
+            <p>
+              Liderança técnica de operações ofensivas e defensivas
+              para proteção de ativos corporativos críticos.
+            </p>
+
+            <ul>
+              <li>
+                Pentests, auditorias de vulnerabilidades e validação
+                de controles.
+              </li>
+
+              <li>
+                Hardening de infraestrutura, redes, DNS e firewalls
+                UTM.
+              </li>
+
+              <li>
+                Investigação de incidentes, análise forense e
+                mitigação de ameaças.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Markitetando -->
+        <article class="experience-card glass-card">
+          <button
+            class="experience-trigger"
+            type="button"
+            aria-expanded="false"
+          >
+            <span class="timeline-dot"></span>
+
+            <span class="experience-main">
+              <small>MAI 2022 — PRESENTE</small>
+
+              <strong>
+                DevOps Engineer · Backend & Segurança
+              </strong>
+
+              <em>Markitetando · Híbrido</em>
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="experience-content">
+            <p>
+              Arquitetura backend, automação de infraestrutura em
+              nuvem e implementação de práticas DevSecOps.
+            </p>
+
+            <ul>
+              <li>
+                Microsserviços e APIs de alta performance com Go e
+                PHP.
+              </li>
+
+              <li>
+                Pipelines CI/CD com SAST, DAST e análise de
+                dependências.
+              </li>
+
+              <li>
+                Hardening Linux, AWS e monitoramento contínuo.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Setaaps -->
+        <article class="experience-card glass-card">
+          <button
+            class="experience-trigger"
+            type="button"
+            aria-expanded="false"
+          >
+            <span class="timeline-dot"></span>
+
+            <span class="experience-main">
+              <small>MAR 2021 — JUN 2025</small>
+
+              <strong>
+                Engenheiro de Software / DevSecOps
+              </strong>
+
+              <em>Setaaps Sistemas · Terceirizado</em>
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="experience-content">
+            <p>
+              Evolução de sistemas corporativos, automação
+              operacional e gestão de infraestrutura segura.
+            </p>
+
+            <ul>
+              <li>
+                Modernização, refatoração e otimização de aplicações
+                de alta demanda.
+              </li>
+
+              <li>
+                Gestão de pipelines, servidores e controles
+                defensivos.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Adzera -->
+        <article class="experience-card glass-card">
+          <button
+            class="experience-trigger"
+            type="button"
+            aria-expanded="false"
+          >
+            <span class="timeline-dot"></span>
+
+            <span class="experience-main">
+              <small>MAI 2023 — MAI 2024</small>
+
+              <strong>
+                Desenvolvedor Backend · Go, PHP e Python
+              </strong>
+
+              <em>Adzera · iGaming Growth</em>
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="experience-content">
+            <p>
+              Desenvolvimento de sistemas de missão crítica no setor
+              de iGaming.
+            </p>
+
+            <ul>
+              <li>
+                APIs REST performáticas em Go com atenção a
+                concorrência.
+              </li>
+
+              <li>
+                Integrações e otimização de consultas em PostgreSQL.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Setebit -->
+        <article class="experience-card glass-card">
+          <button
+            class="experience-trigger"
+            type="button"
+            aria-expanded="false"
+          >
+            <span class="timeline-dot"></span>
+
+            <span class="experience-main">
+              <small>JUL 2021 — MAR 2024</small>
+
+              <strong>
+                Desenvolvedor Backend
+              </strong>
+
+              <em>Setebit</em>
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="experience-content">
+            <p>
+              Desenvolvimento e manutenção de serviços backend,
+              integrações e rotinas de dados para produtos digitais.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section
+      id="formacao"
+      class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
+    >
+      <div class="section-heading certificates-heading">
+        <div>
+          <p class="eyebrow">
+            04 · Aprendizado contínuo
+          </p>
+
+          <h2 class="section-title">
+            Formação técnica aplicada.
+          </h2>
+        </div>
+
+        <p>
+          Cursos selecionados pelo conteúdo prático e pela conexão
+          direta com engenharia, cloud e segurança.
+        </p>
+      </div>
+
+      <!-- Filtros utilizados pelo JavaScript -->
+      <div
+        class="filter-wrap"
+        role="group"
+        aria-label="Filtrar formações"
+      >
+        <button
+          type="button"
+          class="filter-btn active"
+          data-filter="all"
+        >
+          Todos
+        </button>
+
+        <button
+          type="button"
+          class="filter-btn"
+          data-filter="backend"
+        >
+          Backend & Go
+        </button>
+
+        <button
+          type="button"
+          class="filter-btn"
+          data-filter="cloud"
+        >
+          Cloud & DevOps
+        </button>
+
+        <button
+          type="button"
+          class="filter-btn"
+          data-filter="devsecops"
+        >
+          DevSecOps
+        </button>
+
+        <button
+          type="button"
+          class="filter-btn"
+          data-filter="offensive"
+        >
+          Red Team
+        </button>
+
+        <button
+          type="button"
+          class="filter-btn"
+          data-filter="defensive"
+        >
+          Blue Team
+        </button>
+
+        <button
+          type="button"
+          class="filter-btn"
+          data-filter="ai"
+        >
+          Segurança em IA
+        </button>
+
+        <button
+          type="button"
+          class="filter-btn"
+          data-filter="governance"
+        >
+          Governança
+        </button>
+      </div>
+
+      <div class="carousel-shell">
+        <div class="carousel-top">
+          <p
+            id="courseCount"
+            aria-live="polite"
+          ></p>
+
+          <div class="carousel-controls">
+            <button
+              id="prevCourse"
+              type="button"
+              aria-label="Formação anterior"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button
+              id="nextCourse"
+              type="button"
+              aria-label="Próxima formação"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cards inseridos automaticamente pelo JavaScript -->
+        <div
+          id="courseTrack"
+          class="course-track"
+          aria-label="Carrossel de formações"
+        ></div>
+
+        <div class="carousel-progress">
+          <span id="carouselProgress"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="max-w-7xl mx-auto px-5 sm:px-6 pb-24 reveal"
+    >
+      <div class="cta-panel">
+        <div>
+          <p class="eyebrow">
+            Disponível para desafios remotos
+          </p>
+
+          <h2>
+            Backend robusto. Cloud eficiente. Segurança desde o
+            primeiro commit.
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="mailto:valeriolima97@gmail.com"
+            class="btn-primary"
+          >
+            Conversar por e-mail
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/valerio-j%C3%BAnior-995364206/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-secondary"
+          >
+            LinkedIn
+
+            <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer
+    class="border-t border-gray-800/80 py-9 px-5 sm:px-6"
+  >
+    <div
+      class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 text-sm text-gray-500"
+    >
+      <p>
+        © <span id="currentYear"></span> Valério Lima.
+      </p>
+
+      <p class="font-mono text-xs">
+        Backend · Cloud-Native · DevSecOps · Cybersecurity
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal de detalhes dos cursos -->
+  <div
+    id="courseModal"
+    class="modal"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+  >
+    <div
+      class="modal-backdrop"
+      data-close-modal
+    ></div>
+
+    <div
+      class="modal-panel"
+      role="document"
+    >
+      <button
+        type="button"
+        class="modal-close"
+        data-close-modal
+        aria-label="Fechar detalhes"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <p
+        id="modalMeta"
+        class="eyebrow"
+      ></p>
+
+      <h2 id="modalTitle"></h2>
+
+      <p id="modalDescription"></p>
+
+      <h3>
+        Competências desenvolvidas
+      </h3>
+
+      <div
+        id="modalSkills"
+        class="tag-list"
+      ></div>
+    </div>
+  </div>
+
+  <!-- Confirmação ao copiar e-mail -->
+  <div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite"
+  >
+    <i class="fa-solid fa-check"></i>
+    <span>
+      valeriolima97@gmail.com copiado!
+    </span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
