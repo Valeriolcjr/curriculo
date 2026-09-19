@@ -2,30 +2,25 @@
 <html lang="pt-BR" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
-
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-
   <meta
     name="description"
     content="Valério Lima — Senior Backend Engineer especializado em Golang, Cloud-Native, DevSecOps e Cibersegurança."
   >
-
   <meta name="theme-color" content="#05070b">
 
   <title>
     Valério Lima | Backend, DevSecOps & Cibersegurança
   </title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
     tailwind.config = {
       darkMode: "class",
-
       theme: {
         extend: {
           colors: {
@@ -34,7 +29,6 @@
             accentGreen: "#10b981",
             accentBlue: "#3b82f6"
           },
-
           fontFamily: {
             sans: ["Inter", "sans-serif"],
             mono: ["JetBrains Mono", "monospace"]
@@ -44,34 +38,26 @@
     };
   </script>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
   >
-
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet"
   >
-
-  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   >
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body
   class="bg-darkBg text-gray-100 antialiased selection:bg-emerald-500 selection:text-black overflow-x-hidden"
 >
-  <!-- Fundo animado -->
   <canvas
     id="bgCanvas"
     class="fixed inset-0 pointer-events-none -z-10"
@@ -82,9 +68,8 @@
     Pular para o conteúdo
   </a>
 
-  <!-- Navegação -->
   <header
-    class="fixed inset-x-0 top-0 z-50 glass-nav border-b border-gray-800/80"
+    class="fixed inset-x-0 top-0 z-50 glass-nav"
   >
     <div
       class="max-w-7xl mx-auto px-5 sm:px-6 flex items-center justify-between"
@@ -95,7 +80,7 @@
         aria-label="Valério Lima — início"
       >
         <span class="brand-mark">
-          <i class="fa-solid fa-code"></i>
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
         </span>
 
         <span
@@ -109,21 +94,10 @@
         class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-400"
         aria-label="Navegação principal"
       >
-        <a href="#sobre" class="nav-link">
-          Sobre
-        </a>
-
-        <a href="#competencias" class="nav-link">
-          Competências
-        </a>
-
-        <a href="#experiencia" class="nav-link">
-          Experiência
-        </a>
-
-        <a href="#formacao" class="nav-link">
-          Formação
-        </a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#competencias" class="nav-link">Competências</a>
+        <a href="#experiencia" class="nav-link">Experiência</a>
+        <a href="#formacao" class="nav-link">Formação</a>
       </nav>
 
       <div class="flex items-center gap-2">
@@ -133,7 +107,7 @@
           class="btn-contact hidden sm:inline-flex"
           aria-label="Copiar e-mail profissional"
         >
-          <i class="fa-regular fa-copy"></i>
+          <i class="fa-regular fa-copy" aria-hidden="true"></i>
           <span id="copyText">Contato</span>
         </button>
 
@@ -145,50 +119,39 @@
           aria-controls="mobileMenu"
           aria-label="Abrir menu"
         >
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
       </div>
     </div>
 
-    <!-- Menu mobile -->
     <nav
       id="mobileMenu"
       class="mobile-menu hidden lg:hidden"
       aria-label="Navegação móvel"
     >
       <a href="#sobre">Sobre</a>
-
-      <a href="#competencias">
-        Competências
-      </a>
-
-      <a href="#experiencia">
-        Experiência
-      </a>
-
-      <a href="#formacao">
-        Formação
-      </a>
+      <a href="#competencias">Competências</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
 
       <button
         type="button"
         onclick="copiarEmail()"
       >
-        <i class="fa-regular fa-copy"></i>
+        <i class="fa-regular fa-copy" aria-hidden="true"></i>
         Copiar e-mail
       </button>
     </nav>
   </header>
 
-  <main id="conteudo">
-    <!-- Hero -->
+  <main id="conteudo" tabindex="-1">
     <section
       id="inicio"
       class="hero-section max-w-7xl mx-auto px-5 sm:px-6 grid lg:grid-cols-[1.15fr_.85fr] gap-14 items-center"
     >
       <div class="reveal">
         <div class="status-pill">
-          <span></span>
+          <span aria-hidden="true"></span>
           Fortaleza · Disponível para remoto
         </div>
 
@@ -213,8 +176,10 @@
         <div class="flex flex-wrap gap-3 mt-8">
           <a href="#experiencia" class="btn-primary">
             Conhecer experiência
-
-            <i class="fa-solid fa-arrow-down text-xs"></i>
+            <i
+              class="fa-solid fa-arrow-down text-xs"
+              aria-hidden="true"
+            ></i>
           </a>
 
           <button
@@ -222,14 +187,20 @@
             onclick="window.print()"
             class="btn-secondary"
           >
-            <i class="fa-solid fa-file-arrow-down"></i>
+            <i
+              class="fa-solid fa-file-arrow-down"
+              aria-hidden="true"
+            ></i>
             Baixar currículo
           </button>
         </div>
 
         <div class="contact-row">
           <a href="mailto:valeriolima97@gmail.com">
-            <i class="fa-regular fa-envelope"></i>
+            <i
+              class="fa-regular fa-envelope"
+              aria-hidden="true"
+            ></i>
             valeriolima97@gmail.com
           </a>
 
@@ -238,27 +209,29 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-linkedin"></i>
+            <i
+              class="fa-brands fa-linkedin"
+              aria-hidden="true"
+            ></i>
             LinkedIn
           </a>
 
           <span class="text-gray-600">
-            <i class="fa-brands fa-github"></i>
+            <i
+              class="fa-brands fa-github"
+              aria-hidden="true"
+            ></i>
             GitHub em breve
           </span>
         </div>
       </div>
 
-      <!-- Janela técnica -->
       <div class="relative reveal delay-1">
-        <div
-          class="hero-orbit"
-          aria-hidden="true"
-        ></div>
+        <div class="hero-orbit" aria-hidden="true"></div>
 
         <div class="code-window glass-card">
           <div class="window-bar">
-            <div>
+            <div aria-hidden="true">
               <span></span>
               <span></span>
               <span></span>
@@ -287,13 +260,12 @@ valerio := Engineer{
           <div class="terminal-line">
             <span>$</span>
             secure-by-design --ship
-            <span class="cursor"></span>
+            <span class="cursor" aria-hidden="true"></span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Indicadores -->
     <section
       class="max-w-7xl mx-auto px-5 sm:px-6 pb-10 reveal"
       aria-label="Indicadores profissionais"
@@ -321,16 +293,13 @@ valerio := Engineer{
       </div>
     </section>
 
-    <!-- Sobre -->
     <section
       id="sobre"
       class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
     >
       <div class="section-grid">
         <div>
-          <p class="eyebrow">
-            01 · Perfil
-          </p>
+          <p class="eyebrow">01 · Perfil</p>
 
           <h2 class="section-title">
             Engenharia que conecta produto, operação e segurança.
@@ -370,16 +339,13 @@ valerio := Engineer{
       </div>
     </section>
 
-    <!-- Competências -->
     <section
       id="competencias"
       class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
     >
       <div class="section-heading">
         <div>
-          <p class="eyebrow">
-            02 · Domínio técnico
-          </p>
+          <p class="eyebrow">02 · Domínio técnico</p>
 
           <h2 class="section-title">
             Competências que operam em conjunto.
@@ -395,7 +361,7 @@ valerio := Engineer{
       <div class="skills-grid">
         <article class="skill-card glass-card">
           <div class="skill-icon">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
           </div>
 
           <h3>Backend & Arquitetura</h3>
@@ -418,7 +384,7 @@ valerio := Engineer{
 
         <article class="skill-card glass-card">
           <div class="skill-icon blue">
-            <i class="fa-solid fa-cloud"></i>
+            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
           </div>
 
           <h3>Cloud & DevOps</h3>
@@ -441,7 +407,10 @@ valerio := Engineer{
 
         <article class="skill-card glass-card">
           <div class="skill-icon">
-            <i class="fa-solid fa-shield-halved"></i>
+            <i
+              class="fa-solid fa-shield-halved"
+              aria-hidden="true"
+            ></i>
           </div>
 
           <h3>DevSecOps & Cyber</h3>
@@ -463,7 +432,7 @@ valerio := Engineer{
 
         <article class="skill-card glass-card">
           <div class="skill-icon blue">
-            <i class="fa-solid fa-database"></i>
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
           </div>
 
           <h3>Dados & Observabilidade</h3>
@@ -485,20 +454,14 @@ valerio := Engineer{
       </div>
     </section>
 
-    <!-- Experiência -->
     <section
       id="experiencia"
       class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
     >
       <div class="section-heading">
         <div>
-          <p class="eyebrow">
-            03 · Trajetória
-          </p>
-
-          <h2 class="section-title">
-            Experiência profissional.
-          </h2>
+          <p class="eyebrow">03 · Trajetória</p>
+          <h2 class="section-title">Experiência profissional.</h2>
         </div>
 
         <p>
@@ -508,14 +471,13 @@ valerio := Engineer{
       </div>
 
       <div class="timeline">
-        <!-- Unidental -->
         <article class="experience-card glass-card open">
           <button
             class="experience-trigger"
             type="button"
             aria-expanded="true"
           >
-            <span class="timeline-dot"></span>
+            <span class="timeline-dot" aria-hidden="true"></span>
 
             <span class="experience-main">
               <small>SET 2025 — PRESENTE</small>
@@ -527,7 +489,10 @@ valerio := Engineer{
               <em>Unidental Ceará · Híbrido</em>
             </span>
 
-            <i class="fa-solid fa-chevron-down"></i>
+            <i
+              class="fa-solid fa-chevron-down"
+              aria-hidden="true"
+            ></i>
           </button>
 
           <div class="experience-content">
@@ -541,12 +506,10 @@ valerio := Engineer{
                 Pentests, auditorias de vulnerabilidades e validação
                 de controles.
               </li>
-
               <li>
                 Hardening de infraestrutura, redes, DNS e firewalls
                 UTM.
               </li>
-
               <li>
                 Investigação de incidentes, análise forense e
                 mitigação de ameaças.
@@ -555,14 +518,13 @@ valerio := Engineer{
           </div>
         </article>
 
-        <!-- Markitetando -->
         <article class="experience-card glass-card">
           <button
             class="experience-trigger"
             type="button"
             aria-expanded="false"
           >
-            <span class="timeline-dot"></span>
+            <span class="timeline-dot" aria-hidden="true"></span>
 
             <span class="experience-main">
               <small>MAI 2022 — PRESENTE</small>
@@ -574,7 +536,10 @@ valerio := Engineer{
               <em>Markitetando · Híbrido</em>
             </span>
 
-            <i class="fa-solid fa-chevron-down"></i>
+            <i
+              class="fa-solid fa-chevron-down"
+              aria-hidden="true"
+            ></i>
           </button>
 
           <div class="experience-content">
@@ -588,12 +553,10 @@ valerio := Engineer{
                 Microsserviços e APIs de alta performance com Go e
                 PHP.
               </li>
-
               <li>
                 Pipelines CI/CD com SAST, DAST e análise de
                 dependências.
               </li>
-
               <li>
                 Hardening Linux, AWS e monitoramento contínuo.
               </li>
@@ -601,14 +564,13 @@ valerio := Engineer{
           </div>
         </article>
 
-        <!-- Setaaps -->
         <article class="experience-card glass-card">
           <button
             class="experience-trigger"
             type="button"
             aria-expanded="false"
           >
-            <span class="timeline-dot"></span>
+            <span class="timeline-dot" aria-hidden="true"></span>
 
             <span class="experience-main">
               <small>MAR 2021 — JUN 2025</small>
@@ -620,7 +582,10 @@ valerio := Engineer{
               <em>Setaaps Sistemas · Terceirizado</em>
             </span>
 
-            <i class="fa-solid fa-chevron-down"></i>
+            <i
+              class="fa-solid fa-chevron-down"
+              aria-hidden="true"
+            ></i>
           </button>
 
           <div class="experience-content">
@@ -634,7 +599,6 @@ valerio := Engineer{
                 Modernização, refatoração e otimização de aplicações
                 de alta demanda.
               </li>
-
               <li>
                 Gestão de pipelines, servidores e controles
                 defensivos.
@@ -643,14 +607,13 @@ valerio := Engineer{
           </div>
         </article>
 
-        <!-- Adzera -->
         <article class="experience-card glass-card">
           <button
             class="experience-trigger"
             type="button"
             aria-expanded="false"
           >
-            <span class="timeline-dot"></span>
+            <span class="timeline-dot" aria-hidden="true"></span>
 
             <span class="experience-main">
               <small>MAI 2023 — MAI 2024</small>
@@ -662,7 +625,10 @@ valerio := Engineer{
               <em>Adzera · iGaming Growth</em>
             </span>
 
-            <i class="fa-solid fa-chevron-down"></i>
+            <i
+              class="fa-solid fa-chevron-down"
+              aria-hidden="true"
+            ></i>
           </button>
 
           <div class="experience-content">
@@ -676,7 +642,6 @@ valerio := Engineer{
                 APIs REST performáticas em Go com atenção a
                 concorrência.
               </li>
-
               <li>
                 Integrações e otimização de consultas em PostgreSQL.
               </li>
@@ -684,26 +649,24 @@ valerio := Engineer{
           </div>
         </article>
 
-        <!-- Setebit -->
         <article class="experience-card glass-card">
           <button
             class="experience-trigger"
             type="button"
             aria-expanded="false"
           >
-            <span class="timeline-dot"></span>
+            <span class="timeline-dot" aria-hidden="true"></span>
 
             <span class="experience-main">
               <small>JUL 2021 — MAR 2024</small>
-
-              <strong>
-                Desenvolvedor Backend
-              </strong>
-
+              <strong>Desenvolvedor Backend</strong>
               <em>Setebit</em>
             </span>
 
-            <i class="fa-solid fa-chevron-down"></i>
+            <i
+              class="fa-solid fa-chevron-down"
+              aria-hidden="true"
+            ></i>
           </button>
 
           <div class="experience-content">
@@ -716,20 +679,14 @@ valerio := Engineer{
       </div>
     </section>
 
-    <!-- Formação -->
     <section
       id="formacao"
       class="section max-w-7xl mx-auto px-5 sm:px-6 reveal"
     >
       <div class="section-heading certificates-heading">
         <div>
-          <p class="eyebrow">
-            04 · Aprendizado contínuo
-          </p>
-
-          <h2 class="section-title">
-            Formação técnica aplicada.
-          </h2>
+          <p class="eyebrow">04 · Aprendizado contínuo</p>
+          <h2 class="section-title">Formação técnica aplicada.</h2>
         </div>
 
         <p>
@@ -738,117 +695,322 @@ valerio := Engineer{
         </p>
       </div>
 
-      <!-- Filtros utilizados pelo JavaScript -->
-      <div
-        class="filter-wrap"
-        role="group"
-        aria-label="Filtrar formações"
-      >
-        <button
-          type="button"
-          class="filter-btn active"
-          data-filter="all"
-        >
-          Todos
-        </button>
+      <div class="formation-browser glass-card">
+        <aside class="formation-navigation">
+          <div class="formation-navigation-header">
+            <span class="formation-navigation-icon">
+              <i
+                class="fa-solid fa-layer-group"
+                aria-hidden="true"
+              ></i>
+            </span>
 
-        <button
-          type="button"
-          class="filter-btn"
-          data-filter="backend"
-        >
-          Backend & Go
-        </button>
+            <div>
+              <span class="formation-navigation-label">
+                Trilhas técnicas
+              </span>
+              <h3>Explore por área</h3>
+            </div>
+          </div>
 
-        <button
-          type="button"
-          class="filter-btn"
-          data-filter="cloud"
-        >
-          Cloud & DevOps
-        </button>
-
-        <button
-          type="button"
-          class="filter-btn"
-          data-filter="devsecops"
-        >
-          DevSecOps
-        </button>
-
-        <button
-          type="button"
-          class="filter-btn"
-          data-filter="offensive"
-        >
-          Red Team
-        </button>
-
-        <button
-          type="button"
-          class="filter-btn"
-          data-filter="defensive"
-        >
-          Blue Team
-        </button>
-
-        <button
-          type="button"
-          class="filter-btn"
-          data-filter="ai"
-        >
-          Segurança em IA
-        </button>
-
-        <button
-          type="button"
-          class="filter-btn"
-          data-filter="governance"
-        >
-          Governança
-        </button>
-      </div>
-
-      <div class="carousel-shell">
-        <div class="carousel-top">
-          <p
-            id="courseCount"
-            aria-live="polite"
-          ></p>
-
-          <div class="carousel-controls">
+          <div
+            class="formation-filter-list"
+            role="group"
+            aria-label="Filtrar formações por área"
+          >
             <button
-              id="prevCourse"
               type="button"
-              aria-label="Formação anterior"
+              class="filter-btn active"
+              data-filter="all"
+              aria-pressed="true"
             >
-              <i class="fa-solid fa-arrow-left"></i>
+              <span>Todas as formações</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
             </button>
 
             <button
-              id="nextCourse"
               type="button"
-              aria-label="Próxima formação"
+              class="filter-btn"
+              data-filter="backend"
+              aria-pressed="false"
             >
-              <i class="fa-solid fa-arrow-right"></i>
+              <span>Backend & Go</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="cloud"
+              aria-pressed="false"
+            >
+              <span>Cloud & DevOps</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="devsecops"
+              aria-pressed="false"
+            >
+              <span>DevSecOps</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="offensive"
+              aria-pressed="false"
+            >
+              <span>Red Team</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="defensive"
+              aria-pressed="false"
+            >
+              <span>Blue Team</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="ai"
+              aria-pressed="false"
+            >
+              <span>Segurança em IA</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="governance"
+              aria-pressed="false"
+            >
+              <span>Governança</span>
+              <i
+                class="fa-solid fa-arrow-right"
+                aria-hidden="true"
+              ></i>
             </button>
           </div>
-        </div>
 
-        <!-- Cards inseridos automaticamente pelo JavaScript -->
-        <div
-          id="courseTrack"
-          class="course-track"
-          aria-label="Carrossel de formações"
-        ></div>
+          <div class="formation-select-wrap">
+            <span class="formation-select-label">
+              Selecione uma área
+            </span>
 
-        <div class="carousel-progress">
-          <span id="carouselProgress"></span>
+            <div class="formation-dropdown">
+              <button
+                id="courseFilterButton"
+                class="formation-dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="courseFilterMenu"
+              >
+                <span id="courseFilterLabel">
+                  Todas as formações
+                </span>
+
+                <i
+                  class="fa-solid fa-chevron-down"
+                  aria-hidden="true"
+                ></i>
+              </button>
+
+              <div
+                id="courseFilterMenu"
+                class="formation-dropdown-menu"
+                role="menu"
+                aria-hidden="true"
+              >
+                <button
+                  type="button"
+                  class="formation-dropdown-option active"
+                  data-mobile-filter="all"
+                  role="menuitem"
+                >
+                  <span>Todas as formações</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="formation-dropdown-option"
+                  data-mobile-filter="backend"
+                  role="menuitem"
+                >
+                  <span>Backend & Go</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="formation-dropdown-option"
+                  data-mobile-filter="cloud"
+                  role="menuitem"
+                >
+                  <span>Cloud & DevOps</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="formation-dropdown-option"
+                  data-mobile-filter="devsecops"
+                  role="menuitem"
+                >
+                  <span>DevSecOps</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="formation-dropdown-option"
+                  data-mobile-filter="offensive"
+                  role="menuitem"
+                >
+                  <span>Red Team</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="formation-dropdown-option"
+                  data-mobile-filter="defensive"
+                  role="menuitem"
+                >
+                  <span>Blue Team</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="formation-dropdown-option"
+                  data-mobile-filter="ai"
+                  role="menuitem"
+                >
+                  <span>Segurança em IA</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button
+                  type="button"
+                  class="formation-dropdown-option"
+                  data-mobile-filter="governance"
+                  role="menuitem"
+                >
+                  <span>Governança</span>
+                  <i class="fa-solid fa-check"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p
+            id="courseCount"
+            class="formation-count"
+            aria-live="polite"
+          >
+            26 formações catalogadas
+          </p>
+        </aside>
+
+        <div class="formation-stage">
+          <div class="formation-stage-header">
+            <div>
+              <span class="formation-stage-label">
+                Formação selecionada
+              </span>
+
+              <p id="activeCourseCategory">
+                Todas as formações
+              </p>
+            </div>
+
+            <span
+              id="coursePosition"
+              class="course-position"
+            >
+              01 / 26
+            </span>
+          </div>
+
+          <div
+            id="courseTrack"
+            class="course-track"
+            aria-live="polite"
+            aria-label="Formação selecionada"
+          ></div>
+
+          <div class="formation-stage-footer">
+            <div
+              class="carousel-progress"
+              role="progressbar"
+              aria-label="Progresso das formações"
+              aria-valuemin="1"
+              aria-valuemax="26"
+              aria-valuenow="1"
+            >
+              <span id="carouselProgress"></span>
+            </div>
+
+            <div class="carousel-controls">
+              <button
+                id="prevCourse"
+                type="button"
+                aria-label="Formação anterior"
+              >
+                <i
+                  class="fa-solid fa-arrow-left"
+                  aria-hidden="true"
+                ></i>
+              </button>
+
+              <button
+                id="nextCourse"
+                type="button"
+                aria-label="Próxima formação"
+              >
+                <i
+                  class="fa-solid fa-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
     <section
       class="max-w-7xl mx-auto px-5 sm:px-6 pb-24 reveal"
     >
@@ -882,6 +1044,7 @@ valerio := Engineer{
 
             <i
               class="fa-solid fa-arrow-up-right-from-square text-xs"
+              aria-hidden="true"
             ></i>
           </a>
         </div>
@@ -889,7 +1052,6 @@ valerio := Engineer{
     </section>
   </main>
 
-  <!-- Rodapé -->
   <footer
     class="border-t border-gray-800/80 py-9 px-5 sm:px-6"
   >
@@ -906,7 +1068,6 @@ valerio := Engineer{
     </div>
   </footer>
 
-  <!-- Modal de detalhes dos cursos -->
   <div
     id="courseModal"
     class="modal"
@@ -920,31 +1081,24 @@ valerio := Engineer{
       data-close-modal
     ></div>
 
-    <div
-      class="modal-panel"
-      role="document"
-    >
+    <div class="modal-panel" role="document">
       <button
         type="button"
         class="modal-close"
         data-close-modal
         aria-label="Fechar detalhes"
       >
-        <i class="fa-solid fa-xmark"></i>
+        <i
+          class="fa-solid fa-xmark"
+          aria-hidden="true"
+        ></i>
       </button>
 
-      <p
-        id="modalMeta"
-        class="eyebrow"
-      ></p>
-
+      <p id="modalMeta" class="eyebrow"></p>
       <h2 id="modalTitle"></h2>
-
       <p id="modalDescription"></p>
 
-      <h3>
-        Competências desenvolvidas
-      </h3>
+      <h3>Competências desenvolvidas</h3>
 
       <div
         id="modalSkills"
@@ -953,20 +1107,16 @@ valerio := Engineer{
     </div>
   </div>
 
-  <!-- Confirmação ao copiar e-mail -->
   <div
     id="toast"
     class="toast"
     role="status"
     aria-live="polite"
   >
-    <i class="fa-solid fa-check"></i>
-    <span>
-      valeriolima97@gmail.com copiado!
-    </span>
+    <i class="fa-solid fa-check" aria-hidden="true"></i>
+    <span>valeriolima97@gmail.com copiado!</span>
   </div>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

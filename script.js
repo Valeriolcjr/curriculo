@@ -1,3 +1,5 @@
+'use strict';
+
 const courses = [
   {
     title: 'Go Bootcamp: gRPC & Protocol Buffers',
@@ -5,7 +7,16 @@ const courses = [
     category: 'backend',
     label: 'Backend & Go',
     description: 'Formação extensa em Go, da base a recursos avançados, com concorrência, APIs REST e gRPC, Protocol Buffers, HTTP/2, TLS, bancos SQL/NoSQL e benchmarking.',
-    skills: ['Golang', 'Goroutines', 'Channels', 'gRPC', 'Protocol Buffers', 'REST', 'HTTP/2', 'Benchmarking']
+    skills: [
+      'Golang',
+      'Goroutines',
+      'Channels',
+      'gRPC',
+      'Protocol Buffers',
+      'REST',
+      'HTTP/2',
+      'Benchmarking'
+    ]
   },
   {
     title: 'Terraform on AWS EKS Kubernetes IaC/SRE',
@@ -13,7 +24,16 @@ const courses = [
     category: 'cloud',
     label: 'Cloud & DevOps',
     description: 'Infraestrutura como código para ambientes AWS EKS, incluindo VPC, IAM, armazenamento, ingress, load balancers, Fargate, autoscaling, logging e monitoramento.',
-    skills: ['Terraform', 'AWS EKS', 'Kubernetes', 'VPC', 'IAM', 'Helm', 'Fargate', 'Autoscaling']
+    skills: [
+      'Terraform',
+      'AWS EKS',
+      'Kubernetes',
+      'VPC',
+      'IAM',
+      'Helm',
+      'Fargate',
+      'Autoscaling'
+    ]
   },
   {
     title: 'AWS EKS Kubernetes Masterclass',
@@ -21,7 +41,16 @@ const courses = [
     category: 'cloud',
     label: 'Cloud & DevOps',
     description: 'Operação de workloads e microsserviços em EKS com storage, ingress, ECR, Fargate, CodePipeline, service discovery, tracing, canary deployment e observabilidade.',
-    skills: ['AWS EKS', 'Kubernetes', 'ECR', 'Fargate', 'X-Ray', 'CloudWatch', 'Microservices', 'CI/CD']
+    skills: [
+      'AWS EKS',
+      'Kubernetes',
+      'ECR',
+      'Fargate',
+      'X-Ray',
+      'CloudWatch',
+      'Microservices',
+      'CI/CD'
+    ]
   },
   {
     title: 'DevSecOps: Kubernetes DevOps & Security',
@@ -29,7 +58,16 @@ const courses = [
     category: 'devsecops',
     label: 'DevSecOps',
     description: 'Integração de segurança ao SDLC e pipelines Jenkins, com SAST, DAST, testes, Vault, análise de imagens e recursos Kubernetes, Falco, Prometheus e Grafana.',
-    skills: ['Shift Left', 'SAST', 'DAST', 'Jenkins', 'Vault', 'Trivy', 'Falco', 'Kubernetes']
+    skills: [
+      'Shift Left',
+      'SAST',
+      'DAST',
+      'Jenkins',
+      'Vault',
+      'Trivy',
+      'Falco',
+      'Kubernetes'
+    ]
   },
   {
     title: 'DevSecOps com projetos e pipelines seguros',
@@ -37,7 +75,16 @@ const courses = [
     category: 'devsecops',
     label: 'DevSecOps',
     description: 'Projetos práticos de segurança no ciclo DevOps, automação de controles, análise de dependências e infraestrutura, policy as code e proteção cloud-native.',
-    skills: ['Secure CI/CD', 'Snyk', 'Trivy', 'Kyverno', 'Cosign', 'Policy as Code', 'Kubernetes', 'Compliance']
+    skills: [
+      'Secure CI/CD',
+      'Snyk',
+      'Trivy',
+      'Kyverno',
+      'Cosign',
+      'Policy as Code',
+      'Kubernetes',
+      'Compliance'
+    ]
   },
   {
     title: 'Engenharia Reversa de Modelos de IA',
@@ -45,7 +92,16 @@ const courses = [
     category: 'ai',
     label: 'Segurança em IA',
     description: 'Auditoria de modelos por análise de arquitetura, dados de treinamento, privacidade, comportamento adversarial, interpretabilidade e engenharia reversa multimodal.',
-    skills: ['Model Auditing', 'Adversarial AI', 'Privacy', 'Transformers', 'Model Extraction', 'Interpretability', 'PII', 'Responsible Disclosure']
+    skills: [
+      'Model Auditing',
+      'Adversarial AI',
+      'Privacy',
+      'Transformers',
+      'Model Extraction',
+      'Interpretability',
+      'PII',
+      'Responsible Disclosure'
+    ]
   },
   {
     title: 'Certified LLM Security Professional — CLLMSP',
@@ -53,7 +109,16 @@ const courses = [
     category: 'ai',
     label: 'Segurança em IA',
     description: 'Segurança de aplicações baseadas em LLM, cobrindo OWASP LLM Top 10, jailbreaks, RAG, agentes, MCP, governança, privacidade e resposta a incidentes de IA.',
-    skills: ['LLM Security', 'Prompt Injection', 'MCP Security', 'RAG', 'AI Agents', 'NIST AI RMF', 'ISO 42001', 'OWASP LLM']
+    skills: [
+      'LLM Security',
+      'Prompt Injection',
+      'MCP Security',
+      'RAG',
+      'AI Agents',
+      'NIST AI RMF',
+      'ISO 42001',
+      'OWASP LLM'
+    ]
   },
   {
     title: 'Digital Forensics & Incident Investigation',
@@ -61,7 +126,15 @@ const courses = [
     category: 'defensive',
     label: 'Blue Team & DFIR',
     description: 'Aquisição, preservação e análise de evidências em Windows, Linux, memória, rede e nuvem, com cadeia de custódia, timelines, MITRE ATT&CK e relatórios.',
-    skills: ['DFIR', 'Incident Response', 'Memory Forensics', 'Disk Forensics', 'MITRE ATT&CK', 'Chain of Custody', 'Cloud Forensics']
+    skills: [
+      'DFIR',
+      'Incident Response',
+      'Memory Forensics',
+      'Disk Forensics',
+      'MITRE ATT&CK',
+      'Chain of Custody',
+      'Cloud Forensics'
+    ]
   },
   {
     title: 'OpSec & Anonymity for Red Teams',
@@ -69,7 +142,15 @@ const courses = [
     category: 'offensive',
     label: 'Red Team',
     description: 'Segurança operacional para simulações ofensivas, com isolamento de personas, infraestrutura C2, redução de atribuição, anti-forense e higiene de metadados.',
-    skills: ['OpSec', 'C2 Infrastructure', 'Anti-Attribution', 'Redirectors', 'Network Obfuscation', 'Anti-Forensics', 'Threat Modeling']
+    skills: [
+      'OpSec',
+      'C2 Infrastructure',
+      'Anti-Attribution',
+      'Redirectors',
+      'Network Obfuscation',
+      'Anti-Forensics',
+      'Threat Modeling'
+    ]
   },
   {
     title: 'Windows API for Red Team Introduction',
@@ -77,7 +158,16 @@ const courses = [
     category: 'offensive',
     label: 'Red Team',
     description: 'Programação Windows em C++ e APIs nativas, processos, memória, syscalls, enumeração, resolução dinâmica e fundamentos de desenvolvimento ofensivo.',
-    skills: ['Windows API', 'C++', 'Windows Internals', 'Syscalls', 'Memory', 'API Hashing', 'Hook Detection', 'Offensive Development']
+    skills: [
+      'Windows API',
+      'C++',
+      'Windows Internals',
+      'Syscalls',
+      'Memory',
+      'API Hashing',
+      'Hook Detection',
+      'Offensive Development'
+    ]
   },
   {
     title: 'AWS para Blue & Red Team',
@@ -85,7 +175,15 @@ const courses = [
     category: 'offensive',
     label: 'Cloud Security',
     description: 'Auditoria ofensiva e defesa de ambientes AWS, exploração de configurações, escalada de privilégios, monitoramento e detecção com serviços nativos.',
-    skills: ['AWS Security', 'Cloud Pentest', 'Privilege Escalation', 'GuardDuty', 'AWS Config', 'Macie', 'Blue Team']
+    skills: [
+      'AWS Security',
+      'Cloud Pentest',
+      'Privilege Escalation',
+      'GuardDuty',
+      'AWS Config',
+      'Macie',
+      'Blue Team'
+    ]
   },
   {
     title: 'Wazuh: SIEM & XDR do básico ao avançado',
@@ -93,7 +191,16 @@ const courses = [
     category: 'defensive',
     label: 'Blue Team',
     description: 'Implantação e operação do Wazuh para análise de logs, detecção, vulnerabilidades, threat hunting, resposta automatizada e monitoramento cloud.',
-    skills: ['Wazuh', 'SIEM', 'XDR', 'Threat Hunting', 'Sysmon', 'Suricata', 'MITRE ATT&CK', 'Incident Response']
+    skills: [
+      'Wazuh',
+      'SIEM',
+      'XDR',
+      'Threat Hunting',
+      'Sysmon',
+      'Suricata',
+      'MITRE ATT&CK',
+      'Incident Response'
+    ]
   },
   {
     title: 'AI for Cybersecurity with ChatGPT',
@@ -101,7 +208,16 @@ const courses = [
     category: 'ai',
     label: 'Segurança em IA',
     description: 'Automação de defesa com IA, integração de ChatGPT a SIEM, Sentinel e Logic Apps, enriquecimento de ameaças e análise de logs e malware.',
-    skills: ['GenAI Security', 'Microsoft Sentinel', 'Logic Apps', 'Threat Intelligence', 'KQL', 'VirusTotal', 'Azure', 'SOC Automation']
+    skills: [
+      'GenAI Security',
+      'Microsoft Sentinel',
+      'Logic Apps',
+      'Threat Intelligence',
+      'KQL',
+      'VirusTotal',
+      'Azure',
+      'SOC Automation'
+    ]
   },
   {
     title: 'Especialista em Segurança da Informação',
@@ -109,7 +225,13 @@ const courses = [
     category: 'defensive',
     label: 'Cibersegurança',
     description: 'Fundamentos e práticas de segurança, principais ameaças, métodos utilizados por atacantes e controles corporativos de proteção.',
-    skills: ['Security Fundamentals', 'Threats', 'Attack Methods', 'Corporate Security', 'Risk Awareness']
+    skills: [
+      'Security Fundamentals',
+      'Threats',
+      'Attack Methods',
+      'Corporate Security',
+      'Risk Awareness'
+    ]
   },
   {
     title: 'Curso Completo em Cyber Security',
@@ -117,7 +239,16 @@ const courses = [
     category: 'governance',
     label: 'Cyber & Gestão',
     description: 'Visão ampla de segurança defensiva e ofensiva, prevenção, SOC, resposta a incidentes, tecnologias de proteção e liderança de segurança.',
-    skills: ['Cyber Strategy', 'SOC', 'Incident Response', 'Security Leadership', 'Firewalls', 'WAF', 'MFA', 'Metasploit']
+    skills: [
+      'Cyber Strategy',
+      'SOC',
+      'Incident Response',
+      'Security Leadership',
+      'Firewalls',
+      'WAF',
+      'MFA',
+      'Metasploit'
+    ]
   },
   {
     title: 'Política de Segurança baseada na ISO 27001',
@@ -125,7 +256,14 @@ const courses = [
     category: 'governance',
     label: 'Governança',
     description: 'Criação, revisão e aplicação de políticas de segurança alinhadas à ISO 27001, objetivos de negócio e requisitos de proteção de dados da LGPD.',
-    skills: ['ISO 27001', 'Security Policy', 'LGPD', 'Governance', 'Risk', 'Compliance']
+    skills: [
+      'ISO 27001',
+      'Security Policy',
+      'LGPD',
+      'Governance',
+      'Risk',
+      'Compliance'
+    ]
   },
   {
     title: 'Formação Linux: do básico ao avançado',
@@ -133,7 +271,18 @@ const courses = [
     category: 'cloud',
     label: 'Infraestrutura',
     description: 'Administração Linux, shell, redes, serviços, armazenamento, segurança, automação e arquitetura de infraestrutura open source.',
-    skills: ['Linux', 'Bash', 'Shell Script', 'Networking', 'SSH', 'DNS', 'Nginx', 'Firewall', 'LDAP', 'Samba']
+    skills: [
+      'Linux',
+      'Bash',
+      'Shell Script',
+      'Networking',
+      'SSH',
+      'DNS',
+      'Nginx',
+      'Firewall',
+      'LDAP',
+      'Samba'
+    ]
   },
   {
     title: 'Complete Ethical Hacking with Python',
@@ -141,7 +290,16 @@ const courses = [
     category: 'offensive',
     label: 'Red Team',
     description: 'Automação de tarefas de segurança com Python, análise de redes, scanners, interceptação de tráfego e testes de aplicações em laboratório.',
-    skills: ['Python', 'Kali Linux', 'Scapy', 'Network Scanning', 'ARP', 'Packet Analysis', 'Web Security', 'Automation']
+    skills: [
+      'Python',
+      'Kali Linux',
+      'Scapy',
+      'Network Scanning',
+      'ARP',
+      'Packet Analysis',
+      'Web Security',
+      'Automation'
+    ]
   },
   {
     title: 'Hacker Ético Profissional com Kali Linux',
@@ -149,7 +307,16 @@ const courses = [
     category: 'offensive',
     label: 'Red Team',
     description: 'Pentest com Kali Linux, reconhecimento, análise de vulnerabilidades, redes, aplicações web, Nmap, Wireshark e técnicas de evasão.',
-    skills: ['Kali Linux', 'Nmap', 'Wireshark', 'Web Pentest', 'Network Security', 'OSINT', 'Python', 'Bug Bounty']
+    skills: [
+      'Kali Linux',
+      'Nmap',
+      'Wireshark',
+      'Web Pentest',
+      'Network Security',
+      'OSINT',
+      'Python',
+      'Bug Bounty'
+    ]
   },
   {
     title: 'Fundamentos de Ethical Hacking e Pentest',
@@ -157,7 +324,15 @@ const courses = [
     category: 'offensive',
     label: 'Red Team',
     description: 'Fundamentos de redes e Linux aplicados a pentest, scanning, enumeração, Metasploit, exploração controlada e hardening defensivo.',
-    skills: ['Pentest', 'Kali Linux', 'Nmap', 'Metasploit', 'Enumeration', 'Hardening', 'Network Security']
+    skills: [
+      'Pentest',
+      'Kali Linux',
+      'Nmap',
+      'Metasploit',
+      'Enumeration',
+      'Hardening',
+      'Network Security'
+    ]
   },
   {
     title: 'Pentest em Sites e Aplicações Web',
@@ -165,7 +340,16 @@ const courses = [
     category: 'offensive',
     label: 'AppSec',
     description: 'Testes de segurança web com Burp Suite, OWASP ZAP e laboratórios vulneráveis, cobrindo OWASP Top 10, XSS, SQLi, autenticação e sessões.',
-    skills: ['Web Pentest', 'Burp Suite', 'OWASP ZAP', 'XSS', 'SQL Injection', 'Authentication', 'HTTP', 'OWASP Top 10']
+    skills: [
+      'Web Pentest',
+      'Burp Suite',
+      'OWASP ZAP',
+      'XSS',
+      'SQL Injection',
+      'Authentication',
+      'HTTP',
+      'OWASP Top 10'
+    ]
   },
   {
     title: 'Ataques DoS e DDoS com Kali Linux',
@@ -173,7 +357,14 @@ const courses = [
     category: 'offensive',
     label: 'Network Security',
     description: 'Funcionamento, simulação controlada, detecção e mitigação de ataques DoS/DDoS com análise de tráfego, FortiGate e Cloudflare.',
-    skills: ['DoS/DDoS', 'Traffic Analysis', 'FortiGate', 'Cloudflare', 'Rate Limiting', 'Incident Response']
+    skills: [
+      'DoS/DDoS',
+      'Traffic Analysis',
+      'FortiGate',
+      'Cloudflare',
+      'Rate Limiting',
+      'Incident Response'
+    ]
   },
   {
     title: 'Gerenciamento de Ameaças Cibernéticas',
@@ -181,7 +372,16 @@ const courses = [
     category: 'defensive',
     label: 'Blue Team',
     description: 'Governança, conformidade, testes de rede, inteligência de ameaças, avaliação de vulnerabilidades, riscos, forense e resposta a incidentes.',
-    skills: ['Threat Management', 'Governance', 'Wireshark', 'Vulnerability Assessment', 'Risk', 'DFIR', 'Incident Response', 'Packet Tracer']
+    skills: [
+      'Threat Management',
+      'Governance',
+      'Wireshark',
+      'Vulnerability Assessment',
+      'Risk',
+      'DFIR',
+      'Incident Response',
+      'Packet Tracer'
+    ]
   },
   {
     title: 'Introdução à Cibersegurança',
@@ -189,7 +389,13 @@ const courses = [
     category: 'defensive',
     label: 'Fundamentos',
     description: 'Fundamentos de ameaças, ataques e técnicas, proteção de dados e privacidade, segurança organizacional e carreira em cibersegurança.',
-    skills: ['Cyber Fundamentals', 'Threats', 'Privacy', 'Data Protection', 'Organizational Security']
+    skills: [
+      'Cyber Fundamentals',
+      'Threats',
+      'Privacy',
+      'Data Protection',
+      'Organizational Security'
+    ]
   },
   {
     title: 'Fundamentos para Carreira em Cibersegurança',
@@ -197,7 +403,12 @@ const courses = [
     category: 'governance',
     label: 'Fundamentos',
     description: 'Princípios de segurança da informação, gestão de riscos, conscientização e fundamentos para atuação profissional em cibersegurança.',
-    skills: ['Security Fundamentals', 'Risk Management', 'Awareness', 'Information Security']
+    skills: [
+      'Security Fundamentals',
+      'Risk Management',
+      'Awareness',
+      'Information Security'
+    ]
   },
   {
     title: 'Microsoft Defender XDR',
@@ -205,7 +416,13 @@ const courses = [
     category: 'defensive',
     label: 'Blue Team',
     description: 'Defesa contra ameaças com o ecossistema Microsoft Defender XDR, investigação, monitoramento e resposta coordenada a incidentes.',
-    skills: ['Defender XDR', 'Threat Detection', 'Investigation', 'Incident Response', 'Microsoft Security']
+    skills: [
+      'Defender XDR',
+      'Threat Detection',
+      'Investigation',
+      'Incident Response',
+      'Microsoft Security'
+    ]
   }
 ];
 
@@ -213,493 +430,1020 @@ const $ = (selector, context = document) =>
   context.querySelector(selector);
 
 const $$ = (selector, context = document) =>
-  [...context.querySelectorAll(selector)];
+  Array.from(context.querySelectorAll(selector));
 
-const track = $('#courseTrack');
+const prefersReducedMotion = window.matchMedia(
+  '(prefers-reduced-motion: reduce)'
+);
 
+const categoryNames = {
+  all: 'Todas as formações',
+  backend: 'Backend & Go',
+  cloud: 'Cloud & DevOps',
+  devsecops: 'DevSecOps',
+  offensive: 'Red Team',
+  defensive: 'Blue Team',
+  ai: 'Segurança em IA',
+  governance: 'Governança'
+};
+
+let selectedCategory = 'all';
 let filteredCourses = [...courses];
+let activeCourseIndex = 0;
 let lastFocusedElement = null;
+let toastTimer = null;
+let renderTimer = null;
+let touchStartX = 0;
+let touchStartY = 0;
 
-function courseCard(course, index) {
+function escapeHTML(value = '') {
+  return String(value).replace(/[&<>"']/g, character => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  })[character]);
+}
+
+function createCourseCard(course) {
   const tags = course.skills
-    .slice(0, 4)
-    .map(skill => `<span>${skill}</span>`)
+    .map(skill => `<span>${escapeHTML(skill)}</span>`)
     .join('');
 
   return `
-    <article
-      class="course-card glass-card"
-      data-course-index="${index}"
-    >
+    <article class="course-card">
       <div class="course-meta">
-        <span>${course.label}</span>
-        <span>${String(index + 1).padStart(2, '0')}</span>
+        <span>${escapeHTML(course.label)}</span>
+        <span>Formação técnica</span>
       </div>
 
-      <h3>${course.title}</h3>
+      <h3>${escapeHTML(course.title)}</h3>
 
-      <p>${course.description}</p>
+      <p class="course-provider">
+        ${escapeHTML(course.provider)}
+      </p>
+
+      <p class="course-description">
+        ${escapeHTML(course.description)}
+      </p>
 
       <div class="tag-list">
         ${tags}
       </div>
 
-      <button type="button" data-open-course="${index}">
+      <button
+        type="button"
+        class="course-details-button"
+        data-open-course
+        aria-label="Ver competências da formação ${escapeHTML(course.title)}"
+      >
         <span>Ver competências</span>
-        <i class="fa-solid fa-arrow-right"></i>
+        <i
+          class="fa-solid fa-arrow-right"
+          aria-hidden="true"
+        ></i>
       </button>
     </article>
   `;
 }
 
-function renderCourses() {
-  track.innerHTML = filteredCourses
-    .map(courseCard)
-    .join('');
+function renderCourse(animate = true) {
+  const track = $('#courseTrack');
+  const count = $('#courseCount');
+  const position = $('#coursePosition');
+  const category = $('#activeCourseCategory');
+  const progress = $('#carouselProgress');
+  const progressContainer = progress?.parentElement;
+  const previousButton = $('#prevCourse');
+  const nextButton = $('#nextCourse');
 
-  $('#courseCount').textContent =
-    `${filteredCourses.length} formações nesta categoria`;
+  if (!track || !filteredCourses.length) return;
 
-  track.scrollTo({
-    left: 0,
-    behavior: 'instant'
+  const course = filteredCourses[activeCourseIndex];
+  const current = activeCourseIndex + 1;
+  const total = filteredCourses.length;
+  const formattedCurrent = String(current).padStart(2, '0');
+  const formattedTotal = String(total).padStart(2, '0');
+
+  clearTimeout(renderTimer);
+
+  const updateCard = () => {
+    track.innerHTML = createCourseCard(course);
+    track.classList.remove('is-changing');
+
+    $('[data-open-course]', track)?.addEventListener(
+      'click',
+      event => {
+        openCourse(course, event.currentTarget);
+      }
+    );
+  };
+
+  if (animate && !prefersReducedMotion.matches) {
+    track.classList.add('is-changing');
+    renderTimer = setTimeout(updateCard, 170);
+  } else {
+    updateCard();
+  }
+
+  if (count) {
+    count.textContent = total === 1
+      ? '1 formação nesta categoria'
+      : `${total} formações nesta categoria`;
+  }
+
+  if (position) {
+    position.textContent =
+      `${formattedCurrent} / ${formattedTotal}`;
+  }
+
+  if (category) {
+    category.textContent =
+      categoryNames[selectedCategory];
+  }
+
+  if (progress) {
+    progress.style.width =
+      `${(current / total) * 100}%`;
+  }
+
+  if (progressContainer) {
+    progressContainer.setAttribute(
+      'aria-valuemax',
+      String(total)
+    );
+
+    progressContainer.setAttribute(
+      'aria-valuenow',
+      String(current)
+    );
+  }
+
+  if (previousButton) {
+    previousButton.disabled =
+      activeCourseIndex === 0;
+  }
+
+  if (nextButton) {
+    nextButton.disabled =
+      activeCourseIndex === total - 1;
+  }
+}
+
+function changeCourse(direction) {
+  const nextIndex =
+    activeCourseIndex + direction;
+
+  if (
+    nextIndex < 0 ||
+    nextIndex >= filteredCourses.length
+  ) {
+    return;
+  }
+
+  activeCourseIndex = nextIndex;
+  renderCourse();
+}
+
+function selectCategory(category) {
+  selectedCategory = category;
+  activeCourseIndex = 0;
+
+  filteredCourses = category === 'all'
+    ? [...courses]
+    : courses.filter(
+        course => course.category === category
+      );
+
+  $$('.filter-btn').forEach(button => {
+    const isActive =
+      button.dataset.filter === category;
+
+    button.classList.toggle(
+      'active',
+      isActive
+    );
+
+    button.setAttribute(
+      'aria-pressed',
+      String(isActive)
+    );
   });
 
-  updateCarousel();
+  $$('.formation-dropdown-option').forEach(option => {
+    option.classList.toggle(
+      'active',
+      option.dataset.mobileFilter === category
+    );
+  });
 
-  $$('[data-open-course]', track).forEach(button => {
+  const label = $('#courseFilterLabel');
+
+  if (label) {
+    label.textContent = categoryNames[category];
+  }
+
+  closeFormationDropdown();
+  renderCourse();
+}
+
+function closeFormationDropdown() {
+  const dropdown = $('.formation-dropdown');
+  const button = $('#courseFilterButton');
+  const menu = $('#courseFilterMenu');
+
+  if (!dropdown || !button || !menu) return;
+
+  dropdown.classList.remove('open');
+  button.setAttribute('aria-expanded', 'false');
+  menu.setAttribute('aria-hidden', 'true');
+}
+
+function initializeFormation() {
+  $$('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
-      openCourse(
-        Number(button.dataset.openCourse),
-        button
+      selectCategory(
+        button.dataset.filter || 'all'
       );
     });
   });
-}
 
-function updateCarousel() {
-  const max = Math.max(
-    track.scrollWidth - track.clientWidth,
-    1
-  );
+  const dropdown = $('.formation-dropdown');
+  const dropdownButton = $('#courseFilterButton');
+  const dropdownMenu = $('#courseFilterMenu');
 
-  const ratio = Math.min(
-    track.scrollLeft / max,
-    1
-  );
+  dropdownButton?.addEventListener('click', event => {
+    event.stopPropagation();
 
-  const visibleRatio = Math.min(
-    track.clientWidth / Math.max(track.scrollWidth, 1),
-    1
-  );
+    const isOpen =
+      dropdown.classList.toggle('open');
 
-  const progress = $('#carouselProgress');
+    dropdownButton.setAttribute(
+      'aria-expanded',
+      String(isOpen)
+    );
 
-  progress.style.width =
-    `${Math.max(visibleRatio * 100, 12)}%`;
-
-  progress.style.transform =
-    `translateX(${ratio * (100 / visibleRatio - 100)}%)`;
-
-  $('#prevCourse').disabled =
-    track.scrollLeft < 4;
-
-  $('#nextCourse').disabled =
-    track.scrollLeft >= max - 4;
-}
-
-function moveCarousel(direction) {
-  const card = $('.course-card', track);
-
-  track.scrollBy({
-    left: direction * ((card?.offsetWidth || 320) + 16),
-    behavior: 'smooth'
+    dropdownMenu.setAttribute(
+      'aria-hidden',
+      String(!isOpen)
+    );
   });
+
+  $$('.formation-dropdown-option').forEach(option => {
+    option.addEventListener('click', () => {
+      selectCategory(
+        option.dataset.mobileFilter || 'all'
+      );
+    });
+  });
+
+  document.addEventListener('click', event => {
+    if (
+      dropdown?.classList.contains('open') &&
+      !dropdown.contains(event.target)
+    ) {
+      closeFormationDropdown();
+    }
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      closeFormationDropdown();
+    }
+  });
+
+  $('#prevCourse')?.addEventListener(
+    'click',
+    () => changeCourse(-1)
+  );
+
+  $('#nextCourse')?.addEventListener(
+    'click',
+    () => changeCourse(1)
+  );
+
+  const stage = $('.formation-stage');
+
+  stage?.addEventListener(
+    'touchstart',
+    event => {
+      const touch = event.changedTouches[0];
+
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+    },
+    { passive: true }
+  );
+
+  stage?.addEventListener(
+    'touchend',
+    event => {
+      const touch = event.changedTouches[0];
+
+      const differenceX =
+        touch.clientX - touchStartX;
+
+      const differenceY =
+        touch.clientY - touchStartY;
+
+      if (
+        Math.abs(differenceX) < 55 ||
+        Math.abs(differenceX) <
+          Math.abs(differenceY)
+      ) {
+        return;
+      }
+
+      changeCourse(
+        differenceX < 0 ? 1 : -1
+      );
+    },
+    { passive: true }
+  );
+
+  renderCourse(false);
 }
 
-function openCourse(index, trigger) {
-  const course = filteredCourses[index];
-
-  if (!course) return;
-
-  lastFocusedElement = trigger;
-
-  $('#modalMeta').textContent =
-    `${course.label} · ${course.provider}`;
-
-  $('#modalTitle').textContent =
-    course.title;
-
-  $('#modalDescription').textContent =
-    course.description;
-
-  $('#modalSkills').innerHTML =
-    course.skills
-      .map(skill => `<span>${skill}</span>`)
-      .join('');
-
+function openCourse(course, trigger) {
   const modal = $('#courseModal');
 
+  if (!course || !modal) return;
+
+  const modalMeta = $('#modalMeta');
+  const modalTitle = $('#modalTitle');
+  const modalDescription =
+    $('#modalDescription');
+  const modalSkills = $('#modalSkills');
+
+  lastFocusedElement =
+    trigger || document.activeElement;
+
+  if (modalMeta) {
+    modalMeta.textContent =
+      `${course.label} · ${course.provider}`;
+  }
+
+  if (modalTitle) {
+    modalTitle.textContent = course.title;
+  }
+
+  if (modalDescription) {
+    modalDescription.textContent =
+      course.description;
+  }
+
+  if (modalSkills) {
+    modalSkills.innerHTML = course.skills
+      .map(
+        skill =>
+          `<span>${escapeHTML(skill)}</span>`
+      )
+      .join('');
+  }
+
   modal.classList.add('open');
-  modal.setAttribute('aria-hidden', 'false');
+  modal.setAttribute(
+    'aria-hidden',
+    'false'
+  );
 
   document.body.style.overflow = 'hidden';
 
-  $('.modal-close', modal).focus();
+  requestAnimationFrame(() => {
+    $('.modal-close', modal)?.focus();
+  });
 }
 
 function closeCourse() {
   const modal = $('#courseModal');
 
+  if (
+    !modal ||
+    !modal.classList.contains('open')
+  ) {
+    return;
+  }
+
   modal.classList.remove('open');
-  modal.setAttribute('aria-hidden', 'true');
+  modal.setAttribute(
+    'aria-hidden',
+    'true'
+  );
 
   document.body.style.overflow = '';
 
   lastFocusedElement?.focus();
+  lastFocusedElement = null;
+}
+
+function initializeModal() {
+  $$('[data-close-modal]').forEach(
+    element => {
+      element.addEventListener(
+        'click',
+        closeCourse
+      );
+    }
+  );
+
+  document.addEventListener(
+    'keydown',
+    event => {
+      const modal = $('#courseModal');
+
+      if (
+        !modal?.classList.contains('open')
+      ) {
+        return;
+      }
+
+      if (event.key === 'Escape') {
+        closeCourse();
+        return;
+      }
+
+      if (event.key !== 'Tab') return;
+
+      const focusableElements = $$(
+        [
+          'button:not([disabled])',
+          'a[href]',
+          'input:not([disabled])',
+          'select:not([disabled])',
+          'textarea:not([disabled])',
+          '[tabindex]:not([tabindex="-1"])'
+        ].join(','),
+        modal
+      ).filter(
+        element =>
+          element.offsetParent !== null
+      );
+
+      if (!focusableElements.length) {
+        return;
+      }
+
+      const firstElement =
+        focusableElements[0];
+
+      const lastElement =
+        focusableElements[
+          focusableElements.length - 1
+        ];
+
+      if (
+        event.shiftKey &&
+        document.activeElement ===
+          firstElement
+      ) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (
+        !event.shiftKey &&
+        document.activeElement ===
+          lastElement
+      ) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    }
+  );
+}
+
+function showToast(message) {
+  const toast = $('#toast');
+
+  if (!toast) return;
+
+  const text = $('span', toast);
+
+  if (text) {
+    text.textContent = message;
+  }
+
+  clearTimeout(toastTimer);
+  toast.classList.add('show');
+
+  toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2200);
 }
 
 async function copiarEmail() {
   const email = 'valeriolima97@gmail.com';
+  const copyText = $('#copyText');
+  let copied = false;
 
   try {
-    await navigator.clipboard.writeText(email);
-  } catch (_) {
-    const field = document.createElement('textarea');
+    if (
+      navigator.clipboard &&
+      window.isSecureContext
+    ) {
+      await navigator.clipboard.writeText(
+        email
+      );
+
+      copied = true;
+    }
+  } catch {
+    copied = false;
+  }
+
+  if (!copied) {
+    const field =
+      document.createElement('textarea');
 
     field.value = email;
+    field.readOnly = true;
+    field.style.position = 'fixed';
+    field.style.left = '-9999px';
+
     document.body.appendChild(field);
+
     field.select();
-    document.execCommand('copy');
+    field.setSelectionRange(
+      0,
+      field.value.length
+    );
+
+    try {
+      copied =
+        document.execCommand('copy');
+    } catch {
+      copied = false;
+    }
+
     field.remove();
   }
 
-  const copyText = document.querySelector('#copyText');
-
-  if (copyText) {
-    copyText.textContent = 'Copiado!';
-  }
-
-  const toast = document.querySelector('#toast');
-
-  toast.classList.add('show');
-
-  setTimeout(() => {
-    toast.classList.remove('show');
-
+  if (copied) {
     if (copyText) {
-      copyText.textContent = 'Contato';
+      copyText.textContent = 'Copiado!';
     }
-  }, 2200);
+
+    showToast(`${email} copiado!`);
+
+    setTimeout(() => {
+      if (copyText) {
+        copyText.textContent = 'Contato';
+      }
+    }, 2200);
+  } else {
+    showToast(email);
+  }
 }
 
 window.copiarEmail = copiarEmail;
 
-$('#menuButton').addEventListener('click', () => {
+function closeMobileMenu() {
   const menu = $('#mobileMenu');
+  const button = $('#menuButton');
+  const icon = button
+    ? $('i', button)
+    : null;
 
-  const open =
-    !menu.classList.contains('hidden');
+  if (!menu || !button) return;
 
-  menu.classList.toggle('hidden');
+  menu.classList.add('hidden');
 
-  $('#menuButton').setAttribute(
+  button.setAttribute(
     'aria-expanded',
-    String(!open)
+    'false'
   );
 
-  $('#menuButton i').className = open
-    ? 'fa-solid fa-bars'
-    : 'fa-solid fa-xmark';
-});
+  button.setAttribute(
+    'aria-label',
+    'Abrir menu'
+  );
 
-$$('#mobileMenu a').forEach(link => {
-  link.addEventListener('click', () => {
-    $('#mobileMenu').classList.add('hidden');
-
-    $('#menuButton').setAttribute(
-      'aria-expanded',
-      'false'
-    );
-
-    $('#menuButton i').className =
+  if (icon) {
+    icon.className =
       'fa-solid fa-bars';
-  });
-});
+  }
+}
 
-$$('.experience-trigger').forEach(button => {
+function initializeMobileMenu() {
+  const menu = $('#mobileMenu');
+  const button = $('#menuButton');
+
+  if (!menu || !button) return;
+
   button.addEventListener('click', () => {
-    const card =
-      button.closest('.experience-card');
+    const isOpen =
+      !menu.classList.contains('hidden');
 
-    const open =
-      card.classList.toggle('open');
+    menu.classList.toggle('hidden');
 
     button.setAttribute(
       'aria-expanded',
-      String(open)
+      String(!isOpen)
+    );
+
+    button.setAttribute(
+      'aria-label',
+      isOpen
+        ? 'Abrir menu'
+        : 'Fechar menu'
+    );
+
+    const icon = $('i', button);
+
+    if (icon) {
+      icon.className = isOpen
+        ? 'fa-solid fa-bars'
+        : 'fa-solid fa-xmark';
+    }
+  });
+
+  $$('a', menu).forEach(link => {
+    link.addEventListener(
+      'click',
+      closeMobileMenu
     );
   });
-});
 
-$$('.filter-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    $$('.filter-btn').forEach(item => {
-      item.classList.remove('active');
+  document.addEventListener(
+    'click',
+    event => {
+      const isOpen =
+        !menu.classList.contains('hidden');
+
+      if (
+        isOpen &&
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+      ) {
+        closeMobileMenu();
+      }
+    }
+  );
+}
+
+function initializeExperiences() {
+  $$('.experience-trigger').forEach(
+    button => {
+      button.addEventListener(
+        'click',
+        () => {
+          const card =
+            button.closest(
+              '.experience-card'
+            );
+
+          if (!card) return;
+
+          const isOpen =
+            card.classList.toggle('open');
+
+          button.setAttribute(
+            'aria-expanded',
+            String(isOpen)
+          );
+        }
+      );
+    }
+  );
+}
+
+function initializeRevealAnimations() {
+  const elements = $$('.reveal');
+
+  if (
+    prefersReducedMotion.matches ||
+    !('IntersectionObserver' in window)
+  ) {
+    elements.forEach(element => {
+      element.classList.add('visible');
     });
 
-    button.classList.add('active');
+    return;
+  }
 
-    filteredCourses =
-      button.dataset.filter === 'all'
-        ? [...courses]
-        : courses.filter(course =>
-            course.category === button.dataset.filter
+  const observer =
+    new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          entry.target.classList.add(
+            'visible'
           );
 
-    renderCourses();
-  });
-});
-
-$('#prevCourse').addEventListener(
-  'click',
-  () => moveCarousel(-1)
-);
-
-$('#nextCourse').addEventListener(
-  'click',
-  () => moveCarousel(1)
-);
-
-track.addEventListener(
-  'scroll',
-  updateCarousel,
-  { passive: true }
-);
-
-window.addEventListener(
-  'resize',
-  updateCarousel
-);
-
-$$('[data-close-modal]').forEach(element => {
-  element.addEventListener(
-    'click',
-    closeCourse
-  );
-});
-
-document.addEventListener('keydown', event => {
-  if (
-    event.key === 'Escape' &&
-    $('#courseModal').classList.contains('open')
-  ) {
-    closeCourse();
-  }
-});
-
-const revealObserver =
-  new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.08
-  });
-
-$$('.reveal').forEach(element => {
-  revealObserver.observe(element);
-});
-
-const sections =
-  $$('main section[id]');
-
-const navObserver =
-  new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        $$('.nav-link').forEach(link => {
-          link.classList.toggle(
-            'active',
-            link.getAttribute('href') ===
-              `#${entry.target.id}`
+          observer.unobserve(
+            entry.target
           );
         });
+      },
+      {
+        threshold: 0.08,
+        rootMargin: '0px 0px -30px'
       }
-    });
-  }, {
-    rootMargin: '-35% 0px -55%'
+    );
+
+  elements.forEach(element => {
+    observer.observe(element);
   });
+}
 
-sections.forEach(section => {
-  navObserver.observe(section);
-});
+function initializeNavigationObserver() {
+  const sections =
+    $$('main section[id]');
 
-const canvas = $('#bgCanvas');
+  const links = $$('.nav-link');
 
-if (
-  canvas &&
-  !window.matchMedia(
-    '(prefers-reduced-motion: reduce)'
-  ).matches
-) {
-  const ctx = canvas.getContext('2d');
+  if (
+    !sections.length ||
+    !links.length ||
+    !('IntersectionObserver' in window)
+  ) {
+    return;
+  }
+
+  const observer =
+    new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          links.forEach(link => {
+            link.classList.toggle(
+              'active',
+              link.getAttribute('href') ===
+                `#${entry.target.id}`
+            );
+          });
+        });
+      },
+      {
+        rootMargin: '-35% 0px -55%',
+        threshold: 0
+      }
+    );
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+}
+
+function initializeBackgroundCanvas() {
+  const canvas = $('#bgCanvas');
+
+  if (
+    !canvas ||
+    prefersReducedMotion.matches
+  ) {
+    return;
+  }
+
+  const context =
+    canvas.getContext('2d');
+
+  if (!context) return;
 
   let width = 0;
   let height = 0;
   let particles = [];
-  let animationId;
+  let animationFrame = null;
+  let running = false;
+  let resizeTimer = null;
 
-  const makeParticles = () =>
-    Array.from({
-      length: Math.min(
-        42,
-        Math.floor(width / 28)
-      )
-    }, () => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.28,
-      vy: (Math.random() - 0.5) * 0.28,
-      r: Math.random() * 1.2 + 0.5
-    }));
+  function createParticles() {
+    const mobile =
+      window.innerWidth <= 640;
 
-  const resize = () => {
-    const dpr = Math.min(
+    const total = mobile
+      ? 18
+      : Math.min(
+          44,
+          Math.max(
+            24,
+            Math.floor(width / 32)
+          )
+        );
+
+    particles = Array.from(
+      { length: total },
+      () => ({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx:
+          (Math.random() - 0.5) *
+          0.28,
+        vy:
+          (Math.random() - 0.5) *
+          0.28,
+        radius:
+          Math.random() * 1.2 + 0.5
+      })
+    );
+  }
+
+  function resizeCanvas() {
+    const ratio = Math.min(
       window.devicePixelRatio || 1,
       1.5
     );
 
-    width = innerWidth;
-    height = innerHeight;
+    width =
+      document.documentElement.clientWidth;
 
-    canvas.width = width * dpr;
-    canvas.height = height * dpr;
+    height = window.innerHeight;
 
-    canvas.style.width = `${width}px`;
-    canvas.style.height = `${height}px`;
+    canvas.width =
+      Math.floor(width * ratio);
 
-    ctx.setTransform(
-      dpr,
+    canvas.height =
+      Math.floor(height * ratio);
+
+    canvas.style.width =
+      `${width}px`;
+
+    canvas.style.height =
+      `${height}px`;
+
+    context.setTransform(
+      ratio,
       0,
       0,
-      dpr,
+      ratio,
       0,
       0
     );
 
-    particles = makeParticles();
-  };
+    createParticles();
+  }
 
-  const animate = () => {
-    ctx.clearRect(
+  function draw() {
+    if (!running) return;
+
+    context.clearRect(
       0,
       0,
       width,
       height
     );
 
-    particles.forEach((particle, index) => {
-      particle.x += particle.vx;
-      particle.y += particle.vy;
+    particles.forEach(
+      (particle, index) => {
+        particle.x += particle.vx;
+        particle.y += particle.vy;
 
-      if (
-        particle.x < 0 ||
-        particle.x > width
-      ) {
-        particle.vx *= -1;
-      }
+        if (
+          particle.x <= 0 ||
+          particle.x >= width
+        ) {
+          particle.vx *= -1;
+        }
 
-      if (
-        particle.y < 0 ||
-        particle.y > height
-      ) {
-        particle.vy *= -1;
-      }
+        if (
+          particle.y <= 0 ||
+          particle.y >= height
+        ) {
+          particle.vy *= -1;
+        }
 
-      ctx.fillStyle =
-        'rgba(52, 211, 153, 0.32)';
+        context.fillStyle =
+          'rgba(52, 211, 153, 0.32)';
 
-      ctx.beginPath();
+        context.beginPath();
 
-      ctx.arc(
-        particle.x,
-        particle.y,
-        particle.r,
-        0,
-        Math.PI * 2
-      );
-
-      ctx.fill();
-
-      for (
-        let comparisonIndex = index + 1;
-        comparisonIndex < particles.length;
-        comparisonIndex++
-      ) {
-        const comparisonParticle =
-          particles[comparisonIndex];
-
-        const distance = Math.hypot(
-          particle.x - comparisonParticle.x,
-          particle.y - comparisonParticle.y
+        context.arc(
+          particle.x,
+          particle.y,
+          particle.radius,
+          0,
+          Math.PI * 2
         );
 
-        if (distance < 115) {
-          ctx.strokeStyle =
-            `rgba(16, 185, 129, ${
-              0.045 * (1 - distance / 115)
-            })`;
+        context.fill();
 
-          ctx.beginPath();
+        for (
+          let comparison = index + 1;
+          comparison < particles.length;
+          comparison += 1
+        ) {
+          const secondParticle =
+            particles[comparison];
 
-          ctx.moveTo(
+          const distance = Math.hypot(
+            particle.x -
+              secondParticle.x,
+            particle.y -
+              secondParticle.y
+          );
+
+          if (distance >= 115) {
+            continue;
+          }
+
+          const opacity =
+            0.065 *
+            (1 - distance / 115);
+
+          context.strokeStyle =
+            `rgba(16, 185, 129, ${opacity})`;
+
+          context.lineWidth = 1;
+          context.beginPath();
+
+          context.moveTo(
             particle.x,
             particle.y
           );
 
-          ctx.lineTo(
-            comparisonParticle.x,
-            comparisonParticle.y
+          context.lineTo(
+            secondParticle.x,
+            secondParticle.y
           );
 
-          ctx.stroke();
+          context.stroke();
         }
       }
-    });
+    );
 
-    animationId =
-      requestAnimationFrame(animate);
-  };
+    animationFrame =
+      requestAnimationFrame(draw);
+  }
 
-  let resizeTimer;
+  function start() {
+    if (running) return;
 
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
+    running = true;
 
-    resizeTimer =
-      setTimeout(resize, 150);
-  });
+    animationFrame =
+      requestAnimationFrame(draw);
+  }
+
+  function stop() {
+    running = false;
+
+    if (animationFrame) {
+      cancelAnimationFrame(
+        animationFrame
+      );
+
+      animationFrame = null;
+    }
+  }
+
+  window.addEventListener(
+    'resize',
+    () => {
+      clearTimeout(resizeTimer);
+
+      resizeTimer = setTimeout(() => {
+        resizeCanvas();
+
+        if (window.innerWidth >= 1024) {
+          closeMobileMenu();
+        }
+      }, 160);
+    },
+    { passive: true }
+  );
 
   document.addEventListener(
     'visibilitychange',
     () => {
       if (document.hidden) {
-        cancelAnimationFrame(animationId);
+        stop();
       } else {
-        animate();
+        start();
       }
     }
   );
 
-  resize();
-  animate();
+  resizeCanvas();
+  start();
 }
 
-$('#currentYear').textContent =
-  new Date().getFullYear();
+function initializeSite() {
+  const year = $('#currentYear');
 
-renderCourses();
+  if (year) {
+    year.textContent =
+      new Date().getFullYear();
+  }
+
+  initializeMobileMenu();
+  initializeExperiences();
+  initializeFormation();
+  initializeModal();
+  initializeRevealAnimations();
+  initializeNavigationObserver();
+  initializeBackgroundCanvas();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener(
+    'DOMContentLoaded',
+    initializeSite
+  );
+} else {
+  initializeSite();
+}
